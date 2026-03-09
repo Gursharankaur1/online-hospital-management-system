@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-sans bg-slate-50 text-slate-800 antialiased min-h-screen;
+  }
+  ::selection {
+    @apply bg-teal-200 text-teal-900;
+  }
+  input, select, textarea, button {
+    @apply font-sans;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+  }
+}
